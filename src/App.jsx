@@ -50,7 +50,7 @@ const App = () => {
     }
     else if(!gameState.includes('empty', 0))
     {
-      setGameState('Match Draw... 👶🥴');
+      setGameWinner('Match Draw... 👶🥴');
     }
   };
 

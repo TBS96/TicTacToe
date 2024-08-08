@@ -1,4 +1,3 @@
-import { View, Text } from 'react-native'
 import React from 'react'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
@@ -6,11 +5,11 @@ const Icons = ({name}) => {
     switch(name)
     {
         case 'circle':
-            return <Icon name='circle' size={40} color='green' />
+            return <Icon name='circle-thin' size={50} color='green' />
         case 'cross':
-            return <Icon name='xmark' size={40} color='red' />
+            return <Icon name='times' size={50} color='red' />
         default:
-            return <Icon name='eye' size={40} color='orange' />
+            return <Icon name='eye' size={50} color='orange' />
     }
 }
 
