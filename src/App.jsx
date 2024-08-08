@@ -1,7 +1,18 @@
 import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 
 const App = () => {
+
+  const [isCross, setIsCross] = useState(false);
+  const [gameWinner, setGameWinner] = useState('');
+  const [gameState, setGameState] = useState(new Array(9).fill('empty', 0, 9));
+
+  const reloadGame = () => {
+    setIsCross(false);
+    setGameWinner('');
+    setGameState(new Array(9).fill('empty', 0, 9));
+  };
+
   return (
     <View>
       <Text>App</Text>
